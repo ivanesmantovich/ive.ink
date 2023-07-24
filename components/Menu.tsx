@@ -1,8 +1,11 @@
 'use client'
 
 import styles from './Menu.module.css'
-import Image from 'next/image'
 import asterisk from '@/public/asterisk.svg'
+
+import Image from 'next/image'
+import Link from 'next/link'
+
 import { useState } from 'react'
 
 export default function Menu() {
@@ -33,7 +36,9 @@ export default function Menu() {
                 onMouseOver={aboutMeEnter}
                 onMouseOut={handleMouseout}
             >
-                <div className="mr-5">About me</div>
+                <Link href="/about" className="mr-5">
+                    About me
+                </Link>
                 <Image
                     src={asterisk}
                     alt=""
