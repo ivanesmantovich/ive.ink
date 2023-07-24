@@ -1,0 +1,37 @@
+.spinning {
+    animation-name: spin;
+    animation-duration: 4500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center center;
+}
+
+.fadeIn {
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-name: animateFadeIn;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.pointerAsterisk {
+    transition-property: opacity;
+    /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+    transition-timing-function: ease-in-out;
+    transition-duration: 400ms;
+}
+
+@keyframes animateFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
