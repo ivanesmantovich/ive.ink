@@ -1,10 +1,10 @@
 import Menu from '@/components/Menu'
-import Snowdrop from '@/components/Snowdrop'
+import Wrapper from '@/components/Wrapper'
 
 export default function MenuPage() {
     return (
-        <div className={`flex h-screen w-screen items-center justify-center`}>
+        <Wrapper>
             <Menu />
-        </div>
+        </Wrapper>
     )
 }

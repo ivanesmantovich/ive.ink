@@ -1,0 +1,28 @@
+@import 'Typed';
+
+.inputWrapper {
+    display: block;
+    width: 50%;
+    > .interests {
+        display: block;
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+    }
+    > .interests {
+        pointer-events: none;
+        @include typed(
+            'learning Bezier curve.',
+            'SwiftUI.',
+            '24/7 LeetCode.',
+            'Vercel Analytics.',
+            1.5,
+            (
+                caret-width: 2px,
+                caret-space: 2px,
+            )
+        );
+    }
+}

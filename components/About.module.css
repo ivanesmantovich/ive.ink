@@ -1,0 +1,21 @@
+.fadeIn {
+    opacity: 0;
+    animation-delay: 0.1s;
+    animation-duration: 1.4s;
+    animation-name: animateFadeIn;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.bgSwift {
+    background-color: #ff3f27;
+}
+
+.bgReact {
+    background-color: #0a7ea4;
+}
+
+@keyframes animateFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

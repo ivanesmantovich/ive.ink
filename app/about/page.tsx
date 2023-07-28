@@ -1,9 +1,10 @@
-import SnowdropCaret from '@/components/SnowdropCaret'
+import About from '@/components/About'
+import Wrapper from '@/components/Wrapper'
 
 export default function AboutPage() {
     return (
-        <div className={`flex h-screen w-screen items-center justify-center`}>
-            <SnowdropCaret />
-        </div>
+        <Wrapper>
+            <About/>
+        </Wrapper>
     )
 }
