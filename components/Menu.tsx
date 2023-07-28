@@ -10,7 +10,7 @@ import { useState } from 'react'
 
 export default function Menu() {
     const [hoveredElement, setHoveredElement] = useState<
-        'about' | 'projects' | 'email' | null
+        'about' | 'projects' | 'portfolio' | 'email' | null
     >(null)
 
     const aboutMeEnter = () => {
@@ -19,6 +19,10 @@ export default function Menu() {
 
     const projectsEnter = () => {
         setHoveredElement('projects')
+    }
+
+    const portfolioEnter = () => {
+        setHoveredElement('portfolio')
     }
 
     const emailEnter = () => {
@@ -30,61 +34,81 @@ export default function Menu() {
     }
 
     return (
-        <div className={`flex flex-col h-1/2 text-3xl ${styles.fadeIn}`}>
-            <div
-                className="py-7 flex flex-row cursor-pointer"
+        <div className={`flex flex-col text-4xl ${styles.fadeIn}`}>
+            <Link
+                href="/about"
+                className="py-7 pl-14 flex flex-row cursor-pointer"
                 onMouseOver={aboutMeEnter}
                 onMouseOut={handleMouseout}
             >
-                <Link href="/about" className="flex grow justify-center">
-                    About me
-                </Link>
+                <div>About me</div>
                 {/* TODO: Вынести в отдельный компонент */}
-                {/* <Image
+                <Image
                     src={asterisk}
                     alt=""
-                    className={`w-9 ${styles.pointerAsterisk} ${
+                    className={`ml-5 w-9 ${styles.pointerAsterisk} ${
                         styles.spinning
                     } ${
                         hoveredElement === 'about' ? 'opacity-100' : 'opacity-0'
                     }`}
-                /> */}
-            </div>
+                />
+            </Link>
 
-            <div
-                className="py-7 flex flex-row cursor-pointer"
+            <Link
+                href="/projects"
+                className="py-7 pl-14 flex flex-row cursor-pointer"
                 onMouseOver={projectsEnter}
                 onMouseOut={handleMouseout}
             >
-                <div className="flex grow justify-center">Projects</div>
-                {/* <Image
+                <div>Projects</div>
+                <Image
                     src={asterisk}
                     alt=""
-                    className={`w-9 ${styles.pointerAsterisk} ${
+                    className={`ml-5 w-9 ${styles.pointerAsterisk} ${
                         styles.spinning
                     } ${
                         hoveredElement === 'projects'
                             ? 'opacity-100'
                             : 'opacity-0'
                     }`}
-                /> */}
-            </div>
+                />
+            </Link>
+
+            <Link
+                href="/portfolio"
+                className="py-7 pl-14 flex flex-row cursor-pointer"
+                onMouseOver={portfolioEnter}
+                onMouseOut={handleMouseout}
+            >
+                <div>Portfolio</div>
+                <Image
+                    src={asterisk}
+                    alt=""
+                    className={`ml-5 w-9 ${styles.pointerAsterisk} ${
+                        styles.spinning
+                    } ${
+                        hoveredElement === 'portfolio'
+                            ? 'opacity-100'
+                            : 'opacity-0'
+                    }`}
+                />
+            </Link>
 
             <div
-                className="py-7 flex flex-row cursor-pointer"
+                className="py-7 pl-14 flex flex-row cursor-pointer"
                 onMouseOver={emailEnter}
                 onMouseOut={handleMouseout}
             >
-                <div className="flex grow justify-center">Portfolio</div>
-                {/* <Image
+                <div>Write me an E-Mail</div>
+                <Image
                     src={asterisk}
                     alt=""
-                    className={`w-9 ${styles.pointerAsterisk} ${
+                    className={`ml-5 w-9 ${styles.pointerAsterisk} ${
                         styles.spinning
                     } ${
                         hoveredElement === 'email' ? 'opacity-100' : 'opacity-0'
                     }`}
-                /> */}
+                />
             </div>
             <div className="py-7 flex justify-center">
                 <Image

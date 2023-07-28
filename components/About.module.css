@@ -7,12 +7,26 @@
     animation-fill-mode: forwards;
 }
 
+.bgTransition {
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 100ms;
+}
+
 .bgSwift {
     background-color: #ff3f27;
 }
 
+.bgSwift:hover {
+    background-color: #E81B00;
+}
+
 .bgReact {
     background-color: #0a7ea4;
+}
+
+.bgReact:hover {
+    background-color: #076281;
 }
 
 @keyframes animateFadeIn {
