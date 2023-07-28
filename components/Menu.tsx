@@ -36,10 +36,11 @@ export default function Menu() {
                 onMouseOver={aboutMeEnter}
                 onMouseOut={handleMouseout}
             >
-                <Link href="/about" className="mr-5">
+                <Link href="/about" className="flex grow justify-center">
                     About me
                 </Link>
-                <Image
+                {/* TODO: Вынести в отдельный компонент */}
+                {/* <Image
                     src={asterisk}
                     alt=""
                     className={`w-9 ${styles.pointerAsterisk} ${
@@ -47,7 +48,7 @@ export default function Menu() {
                     } ${
                         hoveredElement === 'about' ? 'opacity-100' : 'opacity-0'
                     }`}
-                />
+                /> */}
             </div>
 
             <div
@@ -55,8 +56,8 @@ export default function Menu() {
                 onMouseOver={projectsEnter}
                 onMouseOut={handleMouseout}
             >
-                <div className="mr-5">Projects</div>
-                <Image
+                <div className="flex grow justify-center">Projects</div>
+                {/* <Image
                     src={asterisk}
                     alt=""
                     className={`w-9 ${styles.pointerAsterisk} ${
@@ -66,7 +67,7 @@ export default function Menu() {
                             ? 'opacity-100'
                             : 'opacity-0'
                     }`}
-                />
+                /> */}
             </div>
 
             <div
@@ -74,8 +75,8 @@ export default function Menu() {
                 onMouseOver={emailEnter}
                 onMouseOut={handleMouseout}
             >
-                <div className="mr-5">Write me an E-Mail</div>
-                <Image
+                <div className="flex grow justify-center">Portfolio</div>
+                {/* <Image
                     src={asterisk}
                     alt=""
                     className={`w-9 ${styles.pointerAsterisk} ${
@@ -83,7 +84,7 @@ export default function Menu() {
                     } ${
                         hoveredElement === 'email' ? 'opacity-100' : 'opacity-0'
                     }`}
-                />
+                /> */}
             </div>
             <div className="py-7 flex justify-center">
                 <Image
