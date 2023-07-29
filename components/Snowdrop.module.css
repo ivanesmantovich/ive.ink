@@ -1,0 +1,7 @@
+.spinning {
+    transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.spinning:hover {
+    transform: rotate(360deg);
+}
