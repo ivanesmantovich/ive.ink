@@ -1,12 +1,16 @@
 import styles from './About.module.css'
 
+import Link from 'next/link'
+
 import Interests from './Interests'
 import Snowdrop from './Snowdrop'
 
 export default function About() {
     return (
         <div className={`w-4/6 h-4/6 ${styles.fadeIn}`}>
-            <Snowdrop withCaret={false} />
+            <Link href="/menu">
+                <Snowdrop withCaret={false} />
+            </Link>
 
             <div className="mt-32 text-3xl">
                 <div>My name is Ivan.</div>
