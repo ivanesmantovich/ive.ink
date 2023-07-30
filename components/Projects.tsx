@@ -7,16 +7,12 @@ import Preview from './Preview'
 export default function Projects() {
     return (
         <div
-            className={`h-full w-full flex items-center justify-center ${styles.fadeIn}`}
+            className={`flex grow flex-col border-2 border-black ${styles.fadeIn}`}
         >
-            <div className="flex flex-col mt-10 w-10/12">
-                <div
-                    className={`flex flex-wrap justify-between ${styles.previewRow}`}
-                >
-                    <Preview />
-                    <Preview />
-                    <Preview />
-                </div>
+            <div className="self-center flex grow flex-wrap items-center justify-between w-8/12 border-2 border-emerald-300">
+                <div className={`${styles.preview}`}></div>
+                <div className={`${styles.preview}`}></div>
+                <div className={`${styles.preview}`}></div>
             </div>
         </div>
     )
