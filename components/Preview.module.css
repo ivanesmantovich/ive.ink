@@ -1,4 +1,21 @@
+.previewContainer {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .previewContainer {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .previewContainer {
+        width: 32%;
+    }
+}
+
 .screencast {
+    max-height: 80vh;
     aspect-ratio: 9 / 19.5;
 }
 

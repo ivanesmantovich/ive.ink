@@ -7,10 +7,10 @@ import remindersLogo from '@/public/remindersLogo.svg'
 export default function Preview() {
     return (
         <div
-            className={`inline-block
-                        w-full sm:w-1/2 lg:w-1/3
+            className={`
                         overflow-hidden
-                        rounded-2xl
+                        rounded-3xl
+                        ${styles.previewContainer}
                         ${styles.enlarge}`}
         >
             <div className={`relative ${styles.screencast}`}>
