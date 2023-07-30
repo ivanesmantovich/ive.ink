@@ -3,13 +3,19 @@ import styles from './Snowdrop.module.css'
 import Image from 'next/image'
 import asterisk from '@/public/asterisk.svg'
 
-export default function Snowdrop() {
+type SnowdropProps = {
+    small?: boolean
+}
+
+export default function Snowdrop(props: SnowdropProps) {
     return (
-        <div className="flex">
+        <div>
             <Image
                 src={asterisk}
                 alt=""
-                className={`w-28 ${styles.spinning}`}
+                className={`${props.small ? 'w-16' : 'w-28'} ${
+                    styles.spinning
+                }`}
             />
         </div>
     )

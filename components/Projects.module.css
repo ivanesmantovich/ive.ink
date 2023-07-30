@@ -77,10 +77,24 @@
         0.1px 3.3px 3.7px -0.8px hsl(var(--shadow-color) / 0.36),
         0.2px 8.2px 9.2px -1.7px hsl(var(--shadow-color) / 0.36),
         0.4px 20px 22.5px -2.5px hsl(var(--shadow-color) / 0.36);
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .description {
     transition-property: background-color;
+}
+
+.bgTransition {
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 100ms;
+}
+
+.bgSwift:hover {
+    background-color: #ff3f27;
+}
+
+.bgReact:hover {
+    background-color: #0a7ea4;
 }

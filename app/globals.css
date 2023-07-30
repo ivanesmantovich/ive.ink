@@ -5,6 +5,7 @@
 body {
     background-color: #fafafa;
     min-height: 100dvh;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
 }
