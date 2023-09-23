@@ -62,7 +62,7 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-transition-duration: 0.1s;
+    -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
     -webkit-transition-property: box-shadow, transform, background-color;
     transition-property: box-shadow, transform, background-color;

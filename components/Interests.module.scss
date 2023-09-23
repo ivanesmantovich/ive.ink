@@ -14,11 +14,9 @@
     > .interests {
         pointer-events: none;
         @include typed(
-            'learning Bezier curve.',
-            'SwiftUI.',
-            '24/7 LeetCode.',
-            'Vercel Analytics.',
-            'cute animations.',
+            'learning Bezier curve',
+            'web standards',
+            'Node JS',
             1.5,
             (
                 caret-width: 2px,
