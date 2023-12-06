@@ -4,7 +4,7 @@ import Image from 'next/image'
 import asterisk from '@/public/asterisk.svg'
 
 type SnowdropProps = {
-    small?: boolean
+    size?: 'small' | 'normal'
 }
 
 export default function Snowdrop(props: SnowdropProps) {
@@ -13,9 +13,11 @@ export default function Snowdrop(props: SnowdropProps) {
             <Image
                 src={asterisk}
                 alt=""
-                className={`${props.small ? 'w-16' : 'w-28'} ${
-                    styles.spinning
-                }`}
+                className={`
+                    w-16 min-[380px]:w-28
+                    ${props.size === 'small' ? 'w-16' : ''}
+                    ${styles.spinning}
+                `}
             />
         </div>
     )

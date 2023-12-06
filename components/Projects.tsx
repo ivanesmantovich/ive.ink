@@ -2,126 +2,37 @@
 
 import styles from './Projects.module.css'
 
-import screenshot from '@/public/screenshot.png'
-import appStoreDownload from '@/public/appStoreDownload.svg'
-import webIcon from '@/public/webIcon.svg'
-import reactIcon from '@/public/reactIcon.svg'
-import swiftIcon from '@/public/swiftIcon.svg'
-import screencast from '@/public/screencast.gif'
-
 import Snowdrop from './Snowdrop'
-import Preview from './Preview'
-import Image from 'next/image'
-import { useState } from 'react'
+import Link from 'next/link'
 
 export default function Projects() {
-    const [selectedLang, setSelectedLang] = useState<'swift' | 'react'>('swift')
     return (
-        <div className={`flex grow flex-col ${styles.fadeIn}`}>
-            <div className="self-center flex justify-between items-center w-2/3 pt-4">
-                <Snowdrop small={true} />
-                <div
-                    className={`flex py-1 px-2 rounded-full border border-white ${styles.bgNav}`}
-                >
+        <div className="flex h-screen w-screen items-center justify-center">
+            <div
+                className={`flex flex-col h-full justify-center w-4/6 ${styles.fadeIn}`}
+            >
+                <Link className="absolute top-[15%]" href="/menu">
+                    <Snowdrop />
+                </Link>
+
+                <div className="">
+                    <div className={'text-3xl pb-8'}>2023</div>
+                    <div className={'pb-4'}>
+                        <div className={'text-2xl text-[#007aff]'}>Ichi</div>
+                        <div className={'text-gray-400'}>
+                            Offline-first PWA Grocery Shopping List
+                        </div>
+                    </div>
+                    <div className={'pb-4'}>
+                        <div className={'text-2xl text-[#007aff]'}>ive.ink</div>
+                        <div className={'text-gray-400'}>Portfolio</div>
+                    </div>
                     <div>
-                        <div
-                            className={`p-2 mr-1 rounded-full ${
-                                styles.bgTransition
-                            } ${styles.langButton} ${
-                                selectedLang === 'swift'
-                                    ? styles.selectedButton
-                                    : ''
-                            }`}
-                            onClick={() => {
-                                setSelectedLang('swift')
-                            }}
-                        >
-                            <Image src={swiftIcon} alt="" className="w-7" />
+                        <div className={'text-2xl text-[#007aff]'}>
+                            xkbswitch.nvim
                         </div>
-                    </div>
-                    <div
-                        className={`p-2 rounded-full ${styles.bgTransition} ${
-                            styles.langButton
-                        } ${
-                            selectedLang === 'react'
-                                ? styles.selectedButton
-                                : ''
-                        }`}
-                        onClick={() => {
-                            setSelectedLang('react')
-                        }}
-                    >
-                        <Image src={reactIcon} alt="" className="w-7" />
-                    </div>
-                </div>
-            </div>
-            <div className="flex grow self-center w-2/3 h-100">
-                <div className="flex grow flex-wrap items-center justify-between">
-                    <div
-                        className={`${styles.previewContainer} ${styles.enlarge}`}
-                    >
-                        <div className={`${styles.preview}`}>
-                            <Image alt="" src={screencast} fill={true} />
-                        </div>
-                        <div
-                            className={`flex grow flex-col items-start pl-6 text-sm border-t border-gray-300`}
-                        >
-                            <div className="py-2">
-                                <div>Reminders</div>
-                                <div className="font-semibold">
-                                    App that reminds you stuff
-                                </div>
-                            </div>
-                            <Image
-                                alt=""
-                                src={appStoreDownload}
-                                height={40}
-                                width={119}
-                            />
-                        </div>
-                    </div>
-
-                    <div
-                        className={`${styles.previewContainer} ${styles.enlarge}`}
-                    >
-                        <div className={`${styles.preview}`}>
-                            <Image alt="" src={screenshot} fill={true} />
-                        </div>
-                        <div className="flex grow flex-col items-start pl-6 text-sm border-t border-gray-300">
-                            <div className="py-2">
-                                <div>Reminders</div>
-                                <div className="font-semibold">
-                                    App that reminds you stuff
-                                </div>
-                            </div>
-                            <Image
-                                alt=""
-                                src={appStoreDownload}
-                                height={40}
-                                width={119}
-                            />
-                        </div>
-                    </div>
-
-                    <div
-                        className={`${styles.previewContainer} ${styles.enlarge}`}
-                    >
-                        <div className={`${styles.preview}`}>
-                            <Image alt="" src={screenshot} fill={true} />
-                        </div>
-                        <div className="flex grow flex-col items-start pl-6 text-sm border-t border-gray-300">
-                            <div className="py-2">
-                                <div>Reminders</div>
-                                <div className="font-semibold">
-                                    App that reminds you stuff
-                                </div>
-                            </div>
-                            <Image
-                                alt=""
-                                src={appStoreDownload}
-                                height={40}
-                                width={119}
-                            />
+                        <div className={'text-gray-400'}>
+                            Smart automatic keyboard layout switching in 100 LOC
                         </div>
                     </div>
                 </div>
