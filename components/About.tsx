@@ -8,7 +8,7 @@ export default function About() {
     function linkProjects() {
         return (
             <Link href={'/projects'} className={'text-[#007aff]'}>
-                software
+                make
             </Link>
         )
     }
@@ -16,7 +16,7 @@ export default function About() {
     function linkBlog() {
         return (
             <Link href={'/blog'} className={'text-[#007aff]'}>
-                blog
+                write
             </Link>
         )
     }
@@ -34,7 +34,7 @@ export default function About() {
                     <div className={'pb-4'}>My name is Ivan.</div>
 
                     <div className={'pb-1'}>
-                        I build easy-to-use, aesthetic {linkProjects()}.
+                        I {linkProjects()}.
                     </div>
                     <div className={'pb-1'}>I {linkBlog()}.</div>
                     <div className={'pb-1'}>I love the Internet.</div>

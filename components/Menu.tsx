@@ -97,7 +97,8 @@ export default function Menu() {
                     />
                 </Link>
 
-                <div
+                <a
+                    href="mailto:ivanesmantovich@gmail.com"
                     className="py-7 pl-14 flex flex-row cursor-pointer"
                     onMouseOver={emailEnter}
                     onMouseOut={handleMouseout}
@@ -114,7 +115,7 @@ export default function Menu() {
                                 : 'opacity-0'
                         }`}
                     />
-                </div>
+                </a>
                 <div className="py-7 flex justify-center">
                     <Image
                         src={asterisk}
