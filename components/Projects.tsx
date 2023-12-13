@@ -46,12 +46,9 @@ export default function Projects() {
                     <div className={'text-3xl pb-8'}>2023</div>
                     <div className={'pb-4'}>
                         <div className={'text-2xl text-[#007aff]'}>Ichi</div>
-                        <div className={'text-gray-400'}>
+                        <div className={'text-gray-500'}>
                             <span>
                                 Offline-first PWA Grocery Shopping List{' '}
-                            </span>
-                            <span className={'font-semibold'}>
-                                (Work in Progress)
                             </span>
                         </div>
                     </div>
@@ -62,7 +59,7 @@ export default function Projects() {
                         >
                             ive.ink
                         </Link>
-                        <div className={'text-gray-400'}>Portfolio</div>
+                        <div className={'text-gray-500'}>Portfolio</div>
                     </div>
                     <div>
                         <div className={'text-2xl text-[#007aff] flex'}>
@@ -88,8 +85,9 @@ export default function Projects() {
                                 </div>
                             )}
                         </div>
-                        <div className={'text-gray-400'}>
-                            Smart automatic keyboard layout switching in 100 LOC
+                        <div className={'text-gray-500'}>
+                            Smart automatic keyboard layout switcher for Neovim
+                            in 100 LOC
                         </div>
                     </div>
                 </div>

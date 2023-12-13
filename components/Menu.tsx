@@ -10,7 +10,7 @@ import { useState } from 'react'
 
 export default function Menu() {
     const [hoveredElement, setHoveredElement] = useState<
-        'about' | 'projects' | 'portfolio' | 'email' | null
+        'about' | 'projects' | 'portfolio' | 'blog' | 'email' | null
     >(null)
 
     const aboutMeEnter = () => {
@@ -23,6 +23,10 @@ export default function Menu() {
 
     const portfolioEnter = () => {
         setHoveredElement('portfolio')
+    }
+
+    const blogEnter = () => {
+        setHoveredElement('blog')
     }
 
     const emailEnter = () => {
@@ -91,6 +95,26 @@ export default function Menu() {
                             styles.spinning
                         } ${
                             hoveredElement === 'portfolio'
+                                ? 'opacity-100'
+                                : 'opacity-0'
+                        }`}
+                    />
+                </Link>
+
+                <Link
+                    href="https://blog.ive.ink"
+                    className="py-7 pl-14 flex flex-row cursor-pointer"
+                    onMouseOver={blogEnter}
+                    onMouseOut={handleMouseout}
+                >
+                    <div>Blog</div>
+                    <Image
+                        src={asterisk}
+                        alt=""
+                        className={`ml-5 w-9 ${styles.pointerAsterisk} ${
+                            styles.spinning
+                        } ${
+                            hoveredElement === 'blog'
                                 ? 'opacity-100'
                                 : 'opacity-0'
                         }`}

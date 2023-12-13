@@ -1,18 +1,26 @@
 .animate {
     opacity: 0;
     animation-delay: 0.5s, 2.7s;
-    animation-duration: 2s, 2s;
+    animation-duration: 1.25s, 1.25s;
     animation-name: animateFadeIn, animateFadeOut;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
 @keyframes animateFadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes animateFadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
