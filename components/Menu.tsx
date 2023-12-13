@@ -101,8 +101,10 @@ export default function Menu() {
                     />
                 </Link>
 
-                <Link
+                <a
                     href="https://blog.ive.ink"
+                    rel="noopener noreferrer"
+                    target="_blank"
                     className="py-7 pl-14 flex flex-row cursor-pointer"
                     onMouseOver={blogEnter}
                     onMouseOut={handleMouseout}
@@ -119,7 +121,7 @@ export default function Menu() {
                                 : 'opacity-0'
                         }`}
                     />
-                </Link>
+                </a>
 
                 <a
                     href="mailto:ivanesmantovich@gmail.com"
