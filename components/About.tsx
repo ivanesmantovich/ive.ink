@@ -22,20 +22,35 @@ export default function About() {
     }
 
     return (
-        <div className="flex h-screen w-screen items-center justify-center">
+        <div className="flex grow justify-center">
             <div
-                className={`flex flex-col h-full justify-center w-5/6 sm:w-4/6 ${styles.fadeIn}`}
+                className={`flex flex-col h-full w-5/6 sm:w-4/6 ${styles.fadeIn}`}
             >
-                <Link className="absolute top-[15%]" href="/menu">
+                <Link className="w-fit pt-10 sm:pt-28 pb-20" href="/menu">
                     <Snowdrop />
                 </Link>
 
-                <div className="text-2xl sm:text-3xl">
-                    <div className={'pb-4'}>My name is Ivan.</div>
+                <div className="text-xl sm:text-3xl">
+                    <div className={'pb-8'}>
+                        <div className={'pb-1'}>My name is Ivan.</div>
+                        <div>
+                            I am a web developer currently living in Voronezh,
+                            Russia.
+                        </div>
+                    </div>
 
-                    <div className={'pb-1'}>I {linkProjects()}.</div>
-                    <div className={'pb-1'}>I {linkBlog()}.</div>
-                    <div className={'pb-1'}>I love the Internet.</div>
+                    <div className={'pb-8'}>
+                        <div className={'pb-1'}>
+                            I {linkProjects()} long-lasting, easy-to-use,
+                            aesthetic software.
+                        </div>
+                        <div>
+                            I {linkBlog()} about UX, design, web performance,
+                            tools for developers and some other stuff.
+                        </div>
+                    </div>
+
+                    <div className={'font-medium'}>I love the Internet.</div>
                 </div>
             </div>
         </div>

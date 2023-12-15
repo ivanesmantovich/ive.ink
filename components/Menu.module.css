@@ -8,8 +8,8 @@
 
 .fadeIn {
     opacity: 0;
-    animation-delay: 0.5s;
-    animation-duration: 2s;
+    animation-delay: 0.1s;
+    animation-duration: 1.4s;
     animation-name: animateFadeIn;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
@@ -22,8 +22,12 @@
 }
 
 @keyframes animateFadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes spin {
@@ -31,6 +35,6 @@
         transform: rotate(0deg);
     }
     to {
-        transform:rotate(360deg);
+        transform: rotate(360deg);
     }
 }

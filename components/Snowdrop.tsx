@@ -9,7 +9,7 @@ type SnowdropProps = {
 
 export default function Snowdrop(props: SnowdropProps) {
     return (
-        <div>
+        <div className={'w-fit'}>
             <Image
                 src={asterisk}
                 alt=""

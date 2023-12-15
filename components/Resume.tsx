@@ -6,17 +6,17 @@ import Snowdrop from './Snowdrop'
 
 export default function Resume() {
     return (
-        <div className="flex h-screen w-screen items-center justify-center">
+        <div className="flex grow justify-center">
             <div
                 className={`flex flex-col h-full w-5/6 sm:w-4/6 ${styles.fadeIn}`}
             >
-                <Link className="pt-20" href="/menu">
+                <Link className="w-fit pt-10 sm:pt-28 pb-20" href="/menu">
                     <Snowdrop />
                 </Link>
 
                 <div
                     className={
-                        'grid grid-rows-2 md:grid-rows-1 grid-cols-2 md:grid-cols-4 text-xl sm:text-2xl pt-20 text-center'
+                        'grid grid-rows-2 md:grid-rows-1 grid-cols-2 md:grid-cols-4 text-xl sm:text-2xl text-center'
                     }
                 >
                     <div>

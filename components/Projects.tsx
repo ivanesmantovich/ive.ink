@@ -34,11 +34,11 @@ export default function Projects() {
     }, [])
 
     return (
-        <div className="flex grow items-center justify-center">
+        <div className="flex grow justify-center">
             <div
-                className={`flex flex-col h-full justify-center w-5/6 sm:w-4/6 ${styles.fadeIn}`}
+                className={`flex flex-col h-full w-5/6 sm:w-4/6 ${styles.fadeIn}`}
             >
-                <Link className="absolute top-[4%] sm:top-[10%]" href="/menu">
+                <Link className="w-fit pt-10 sm:pt-28 pb-20" href="/menu">
                     <Snowdrop />
                 </Link>
 
