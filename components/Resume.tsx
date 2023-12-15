@@ -102,13 +102,25 @@ export default function Resume() {
                     </div>
                 </div>
 
-                <div className={'pt-20 pb-20 text-lg sm:text-xl'}>
+                <div className={'pt-20 text-lg sm:text-xl'}>
                     <div className={'text-xl sm:text-2xl pb-4 font-semibold'}>
                         Education
                     </div>
                     <div>Voronezh State University</div>
                     <div className={'font-medium'}>BA Computer Science</div>
                 </div>
+
+                <a
+                    href={'resume.pdf'}
+                    target={'_blank'}
+                    rel={'noopener noreferrer'}
+                    download
+                    className={
+                        'mt-20 mb-20 w-fit flex grow font-semibold text-xl sm:text-2xl text-[#007aff]'
+                    }
+                >
+                    PDF
+                </a>
             </div>
         </div>
     )
