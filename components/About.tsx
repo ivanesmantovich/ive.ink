@@ -24,18 +24,16 @@ export default function About() {
     return (
         <div className="flex h-screen w-screen items-center justify-center">
             <div
-                className={`flex flex-col h-full justify-center w-4/6 ${styles.fadeIn}`}
+                className={`flex flex-col h-full justify-center w-5/6 sm:w-4/6 ${styles.fadeIn}`}
             >
                 <Link className="absolute top-[15%]" href="/menu">
                     <Snowdrop />
                 </Link>
 
-                <div className="text-3xl">
+                <div className="text-2xl sm:text-3xl">
                     <div className={'pb-4'}>My name is Ivan.</div>
 
-                    <div className={'pb-1'}>
-                        I {linkProjects()}.
-                    </div>
+                    <div className={'pb-1'}>I {linkProjects()}.</div>
                     <div className={'pb-1'}>I {linkBlog()}.</div>
                     <div className={'pb-1'}>I love the Internet.</div>
                 </div>

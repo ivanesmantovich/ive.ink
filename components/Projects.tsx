@@ -4,9 +4,9 @@ import styles from './Projects.module.css'
 
 import Snowdrop from './Snowdrop'
 import Link from 'next/link'
-import { FaStar } from 'react-icons/fa6'
 import { useEffect, useState } from 'react'
 import Loader from '@/components/Loader'
+import { IoIosStar } from 'react-icons/io'
 
 export default function Projects() {
     const [xkbStars, setXkbStars] = useState<number>()
@@ -34,18 +34,26 @@ export default function Projects() {
     }, [])
 
     return (
-        <div className="flex h-screen w-screen items-center justify-center">
+        <div className="flex grow items-center justify-center">
             <div
-                className={`flex flex-col h-full justify-center w-4/6 ${styles.fadeIn}`}
+                className={`flex flex-col h-full justify-center w-5/6 sm:w-4/6 ${styles.fadeIn}`}
             >
-                <Link className="absolute top-[15%]" href="/menu">
+                <Link className="absolute top-[4%] sm:top-[10%]" href="/menu">
                     <Snowdrop />
                 </Link>
 
                 <div>
-                    <div className={'text-3xl pb-8'}>2023</div>
+                    <div className={'text-xl sm:text-2xl pb-6 text-gray-500'}>
+                        2023
+                    </div>
                     <div className={'pb-4'}>
-                        <div className={'text-2xl text-[#007aff]'}>Ichi</div>
+                        <div
+                            className={
+                                'text-xl sm:text-2xl font-semibold text-[#007aff]'
+                            }
+                        >
+                            Ichi
+                        </div>
                         <div className={'text-gray-500'}>
                             <span>
                                 Offline-first PWA Grocery Shopping List{' '}
@@ -55,14 +63,31 @@ export default function Projects() {
                     <div className={'pb-4'}>
                         <Link
                             href={'https://ive.ink'}
-                            className={'text-2xl text-[#007aff]'}
+                            className={
+                                'text-xl sm:text-2xl font-semibold text-[#007aff]'
+                            }
+                        >
+                            blog.ive.ink
+                        </Link>
+                        <div className={'text-gray-500'}>Blog</div>
+                    </div>
+                    <div className={'pb-4'}>
+                        <Link
+                            href={'https://ive.ink'}
+                            className={
+                                'text-xl sm:text-2xl font-semibold text-[#007aff]'
+                            }
                         >
                             ive.ink
                         </Link>
                         <div className={'text-gray-500'}>Portfolio</div>
                     </div>
                     <div>
-                        <div className={'text-2xl text-[#007aff] flex'}>
+                        <div
+                            className={
+                                'text-xl sm:text-2xl font-semibold text-[#007aff] flex'
+                            }
+                        >
                             <Link
                                 href={
                                     'https://github.com/ivanesmantovich/xkbswitch.nvim'
@@ -72,15 +97,19 @@ export default function Projects() {
                             </Link>
                             <div
                                 className={
-                                    'flex pt-0.5 pl-3 pr-1 text-[#eac54f]'
+                                    'flex items-center pl-3 text-[#eac54f] text-xl sm:text-2xl'
                                 }
                             >
-                                <FaStar />
+                                <IoIosStar />
                             </div>
                             {starsLoading ? (
                                 <Loader />
                             ) : (
-                                <div className={'text-[#eac54f]'}>
+                                <div
+                                    className={
+                                        'flex items-end text-[#eac54f] text-lg sm:text-xl font-medium'
+                                    }
+                                >
                                     {xkbStars}
                                 </div>
                             )}

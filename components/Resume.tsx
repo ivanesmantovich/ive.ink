@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import Snowdrop from './Snowdrop'
 
-export default function Portfolio() {
+export default function Resume() {
     return (
         <div className="flex h-screen w-screen items-center justify-center">
             <div
@@ -16,7 +16,7 @@ export default function Portfolio() {
 
                 <div
                     className={
-                        'grid grid-rows-2 md:grid-rows-1 grid-cols-2 md:grid-cols-4  text-2xl pt-20 text-center'
+                        'grid grid-rows-2 md:grid-rows-1 grid-cols-2 md:grid-cols-4 text-xl sm:text-2xl pt-20 text-center'
                     }
                 >
                     <div>
@@ -41,12 +41,20 @@ export default function Portfolio() {
                     </div>
                 </div>
 
-                <div className={'pt-20 text-xl'}>
-                    <div className={'pb-4 text-2xl font-semibold'}>
+                <div className={'pt-20 text-lg sm:text-xl'}>
+                    <div className={'pb-4 text-xl sm:text-2xl font-semibold'}>
                         Experience
                     </div>
                     <div className={'font-medium'}>2021-2023</div>
-                    <div>Goodt, Frontend Developer</div>
+                    <div>
+                        <a
+                            className={'text-[#007aff]'}
+                            href={'https://goodt.me/'}
+                        >
+                            Goodt
+                        </a>
+                        , Frontend Developer
+                    </div>
                     <ul className={'pt-2'} style={{ listStyle: 'inside' }}>
                         <li>
                             Removed two thousand lines of JavaScript spaghetti
@@ -64,8 +72,8 @@ export default function Portfolio() {
                     </ul>
                 </div>
 
-                <div className={'pt-20 text-xl'}>
-                    <div className={'text-2xl pb-4 font-semibold'}>
+                <div className={'pt-20 text-lg sm:text-xl'}>
+                    <div className={'text-xl sm:text-2xl pb-4 font-semibold'}>
                         Open-Source
                     </div>
                     <Link
@@ -82,8 +90,8 @@ export default function Portfolio() {
                     </div>
                 </div>
 
-                <div className={'pt-20 text-xl'}>
-                    <div className={'text-2xl pb-4 font-semibold'}>
+                <div className={'pt-20 text-lg sm:text-xl'}>
+                    <div className={'text-xl sm:text-2xl pb-4 font-semibold'}>
                         Languages
                     </div>
                     <div>
@@ -94,8 +102,8 @@ export default function Portfolio() {
                     </div>
                 </div>
 
-                <div className={'pt-20 pb-20 text-xl'}>
-                    <div className={'text-2xl pb-4 font-semibold'}>
+                <div className={'pt-20 pb-20 text-lg sm:text-xl'}>
+                    <div className={'text-xl sm:text-2xl pb-4 font-semibold'}>
                         Education
                     </div>
                     <div>Voronezh State University</div>

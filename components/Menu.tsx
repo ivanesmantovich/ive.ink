@@ -10,7 +10,7 @@ import { useState } from 'react'
 
 export default function Menu() {
     const [hoveredElement, setHoveredElement] = useState<
-        'about' | 'projects' | 'portfolio' | 'blog' | 'email' | null
+        'about' | 'projects' | 'resume' | 'blog' | 'email' | null
     >(null)
 
     const aboutMeEnter = () => {
@@ -21,8 +21,8 @@ export default function Menu() {
         setHoveredElement('projects')
     }
 
-    const portfolioEnter = () => {
-        setHoveredElement('portfolio')
+    const resumeEnter = () => {
+        setHoveredElement('resume')
     }
 
     const blogEnter = () => {
@@ -38,8 +38,10 @@ export default function Menu() {
     }
 
     return (
-        <div className="flex h-screen w-screen items-center justify-center">
-            <div className={`flex flex-col text-4xl ${styles.fadeIn}`}>
+        <div className="flex grow items-center justify-center">
+            <div
+                className={`flex flex-col text-2xl sm:text-4xl ${styles.fadeIn}`}
+            >
                 <Link
                     href="/about"
                     className="py-7 pl-14 flex flex-row cursor-pointer"
@@ -82,19 +84,19 @@ export default function Menu() {
                 </Link>
 
                 <Link
-                    href="/portfolio"
+                    href="/resume"
                     className="py-7 pl-14 flex flex-row cursor-pointer"
-                    onMouseOver={portfolioEnter}
+                    onMouseOver={resumeEnter}
                     onMouseOut={handleMouseout}
                 >
-                    <div>Portfolio</div>
+                    <div>Résumé</div>
                     <Image
                         src={asterisk}
                         alt=""
                         className={`ml-5 w-9 ${styles.pointerAsterisk} ${
                             styles.spinning
                         } ${
-                            hoveredElement === 'portfolio'
+                            hoveredElement === 'resume'
                                 ? 'opacity-100'
                                 : 'opacity-0'
                         }`}
@@ -146,7 +148,7 @@ export default function Menu() {
                     <Image
                         src={asterisk}
                         alt=""
-                        className={`w-24 ${styles.pointerAsterisk} ${
+                        className={`w-20 ${styles.pointerAsterisk} ${
                             styles.spinning
                         } ${
                             hoveredElement === null
