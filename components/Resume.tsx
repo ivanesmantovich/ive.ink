@@ -3,6 +3,7 @@ import styles from './About.module.css'
 import Link from 'next/link'
 
 import Snowdrop from './Snowdrop'
+import { IoIosDocument } from 'react-icons/io'
 
 export default function Resume() {
     return (
@@ -16,7 +17,7 @@ export default function Resume() {
 
                 <div
                     className={
-                        'grid grid-rows-2 md:grid-rows-1 grid-cols-2 md:grid-cols-4 text-xl sm:text-2xl text-center'
+                        'grid grid-rows-2 md:grid-rows-1 grid-cols-2 md:grid-cols-4 gap-y-3 text-xl sm:text-2xl text-center'
                     }
                 >
                     <div>
@@ -115,11 +116,17 @@ export default function Resume() {
                     target={'_blank'}
                     rel={'noopener noreferrer'}
                     download
-                    className={
-                        'mt-20 mb-20 w-fit flex grow font-semibold text-xl sm:text-2xl text-[#007aff]'
-                    }
                 >
-                    PDF
+                    <div
+                        className={
+                            'flex mt-20 mb-20 w-fit font-semibold text-xl sm:text-2xl text-[#007aff]'
+                        }
+                    >
+                        <div className={'pt-0.5'}>
+                            <IoIosDocument />
+                        </div>
+                        <div>PDF</div>
+                    </div>
                 </a>
             </div>
         </div>

@@ -47,13 +47,15 @@ export default function Projects() {
                         2023
                     </div>
                     <div className={'pb-4'}>
-                        <div
+                        <Link
+                            href={'https://ichi.ive.ink'}
+                            target={'_blank'}
                             className={
                                 'text-xl sm:text-2xl font-semibold text-[#007aff]'
                             }
                         >
                             Ichi
-                        </div>
+                        </Link>
                         <div className={'text-gray-500'}>
                             <span>
                                 Offline-first PWA Grocery Shopping List{' '}
@@ -62,7 +64,8 @@ export default function Projects() {
                     </div>
                     <div className={'pb-4'}>
                         <Link
-                            href={'https://ive.ink'}
+                            href={'https://blog.ive.ink'}
+                            target={'_blank'}
                             className={
                                 'text-xl sm:text-2xl font-semibold text-[#007aff]'
                             }
@@ -74,6 +77,7 @@ export default function Projects() {
                     <div className={'pb-4'}>
                         <Link
                             href={'https://ive.ink'}
+                            target={'_blank'}
                             className={
                                 'text-xl sm:text-2xl font-semibold text-[#007aff]'
                             }
@@ -92,6 +96,7 @@ export default function Projects() {
                                 href={
                                     'https://github.com/ivanesmantovich/xkbswitch.nvim'
                                 }
+                                target={'_blank'}
                             >
                                 xkbswitch.nvim
                             </Link>
