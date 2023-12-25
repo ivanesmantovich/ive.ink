@@ -12,7 +12,7 @@ export default function Resume() {
                 className={`flex flex-col h-full w-5/6 sm:w-4/6 ${styles.fadeIn}`}
             >
                 <Link className="w-fit pt-10 sm:pt-28 pb-20" href="/menu">
-                    <Snowdrop />
+                    <Snowdrop visible static />
                 </Link>
 
                 <div

@@ -27,10 +27,10 @@ export default function About() {
                 className={`flex flex-col h-full w-5/6 sm:w-4/6 ${styles.fadeIn}`}
             >
                 <Link className="w-fit pt-10 sm:pt-28 pb-20" href="/menu">
-                    <Snowdrop />
+                    <Snowdrop visible static />
                 </Link>
 
-                <div className="text-xl sm:text-3xl">
+                <div className="text-lg sm:text-2xl">
                     <div className={'pb-8'}>
                         <div className={'pb-1'}>My name is Ivan.</div>
                         <div>

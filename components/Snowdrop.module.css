@@ -1,7 +1,28 @@
-.spinning {
+.static {
     transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.spinning:hover {
+.static:hover {
     transform: rotate(180deg);
+}
+
+.menu {
+    animation-name: spin;
+    animation-duration: 4500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center center;
+
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: 400ms;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

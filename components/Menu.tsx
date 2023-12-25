@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { useState } from 'react'
+import Snowdrop from './Snowdrop'
 
 export default function Menu() {
     const [hoveredElement, setHoveredElement] = useState<
@@ -48,18 +49,10 @@ export default function Menu() {
                     onMouseOver={aboutMeEnter}
                     onMouseOut={handleMouseout}
                 >
-                    <div>About me</div>
-                    {/* TODO: Вынести в отдельный компонент */}
-                    <Image
-                        src={asterisk}
-                        alt=""
-                        className={`ml-5 w-9 ${styles.pointerAsterisk} ${
-                            styles.spinning
-                        } ${
-                            hoveredElement === 'about'
-                                ? 'opacity-100'
-                                : 'opacity-0'
-                        }`}
+                    <div className="mr-5 font-medium">About me</div>
+                    <Snowdrop
+                        visible={hoveredElement === 'about'}
+                        pointerMode
                     />
                 </Link>
 
@@ -69,17 +62,10 @@ export default function Menu() {
                     onMouseOver={projectsEnter}
                     onMouseOut={handleMouseout}
                 >
-                    <div>Projects</div>
-                    <Image
-                        src={asterisk}
-                        alt=""
-                        className={`ml-5 w-9 ${styles.pointerAsterisk} ${
-                            styles.spinning
-                        } ${
-                            hoveredElement === 'projects'
-                                ? 'opacity-100'
-                                : 'opacity-0'
-                        }`}
+                    <div className="mr-5 font-medium">Projects</div>
+                    <Snowdrop
+                        visible={hoveredElement === 'projects'}
+                        pointerMode
                     />
                 </Link>
 
@@ -89,17 +75,10 @@ export default function Menu() {
                     onMouseOver={resumeEnter}
                     onMouseOut={handleMouseout}
                 >
-                    <div>Résumé</div>
-                    <Image
-                        src={asterisk}
-                        alt=""
-                        className={`ml-5 w-9 ${styles.pointerAsterisk} ${
-                            styles.spinning
-                        } ${
-                            hoveredElement === 'resume'
-                                ? 'opacity-100'
-                                : 'opacity-0'
-                        }`}
+                    <div className="mr-5 font-medium">Résumé</div>
+                    <Snowdrop
+                        visible={hoveredElement === 'resume'}
+                        pointerMode
                     />
                 </Link>
 
@@ -111,18 +90,8 @@ export default function Menu() {
                     onMouseOver={blogEnter}
                     onMouseOut={handleMouseout}
                 >
-                    <div>Blog</div>
-                    <Image
-                        src={asterisk}
-                        alt=""
-                        className={`ml-5 w-9 ${styles.pointerAsterisk} ${
-                            styles.spinning
-                        } ${
-                            hoveredElement === 'blog'
-                                ? 'opacity-100'
-                                : 'opacity-0'
-                        }`}
-                    />
+                    <div className="mr-5 font-medium">Blog</div>
+                    <Snowdrop visible={hoveredElement === 'blog'} pointerMode />
                 </a>
 
                 <a
@@ -131,31 +100,14 @@ export default function Menu() {
                     onMouseOver={emailEnter}
                     onMouseOut={handleMouseout}
                 >
-                    <div>Write me an E-Mail</div>
-                    <Image
-                        src={asterisk}
-                        alt=""
-                        className={`ml-5 w-9 ${styles.pointerAsterisk} ${
-                            styles.spinning
-                        } ${
-                            hoveredElement === 'email'
-                                ? 'opacity-100'
-                                : 'opacity-0'
-                        }`}
+                    <div className="mr-5 font-medium">Write me an E-Mail</div>
+                    <Snowdrop
+                        visible={hoveredElement === 'email'}
+                        pointerMode
                     />
                 </a>
                 <div className="py-7 flex justify-center">
-                    <Image
-                        src={asterisk}
-                        alt=""
-                        className={`w-20 ${styles.pointerAsterisk} ${
-                            styles.spinning
-                        } ${
-                            hoveredElement === null
-                                ? 'opacity-100'
-                                : 'opacity-0'
-                        }`}
-                    />
+                    <Snowdrop visible={hoveredElement === null} />
                 </div>
             </div>
         </div>
