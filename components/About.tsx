@@ -7,7 +7,7 @@ import Snowdrop from './Snowdrop'
 export default function About() {
     function linkProjects() {
         return (
-            <Link href={'/projects'} className={'text-[#007aff]'}>
+            <Link href={'/projects'} className="link">
                 make
             </Link>
         )
@@ -15,7 +15,7 @@ export default function About() {
 
     function linkBlog() {
         return (
-            <Link href={'/blog'} className={'text-[#007aff]'}>
+            <Link href={'/blog'} className="link">
                 write
             </Link>
         )

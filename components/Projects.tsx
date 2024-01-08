@@ -6,7 +6,7 @@ import Snowdrop from './Snowdrop'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import Loader from '@/components/Loader'
-import { IoIosStar } from 'react-icons/io'
+import { IoIosStarOutline } from 'react-icons/io'
 import useSWR from 'swr'
 
 interface Repo {
@@ -29,17 +29,17 @@ export default function Projects() {
             <>
                 <div
                     className={
-                        'flex items-center pl-3 text-[#eac54f] text-xl sm:text-2xl'
+                        'flex items-center pl-2 text-[#eac54f] text-xl sm:text-2xl'
                     }
                 >
-                    <IoIosStar />
+                    <IoIosStarOutline />
                 </div>
                 {reposIsLoading ? (
                     <Loader />
                 ) : (
                     <div
                         className={
-                            'flex items-end text-[#eac54f] text-lg sm:text-xl font-medium'
+                            'flex items-end text-[#eac54f] text-lg sm:text-xl font-normal'
                         }
                     >
                         {reposError
@@ -69,13 +69,11 @@ export default function Projects() {
                         <Link
                             href={'https://ichi.ive.ink'}
                             target={'_blank'}
-                            className={
-                                'text-xl sm:text-2xl font-medium text-[#007aff]'
-                            }
+                            className={'text-xl sm:text-2xl font-medium link'}
                         >
                             Ichi
                         </Link>
-                        <div className={'text-gray-500'}>
+                        <div className="description">
                             <span>
                                 Offline-first PWA Grocery Shopping List{' '}
                             </span>
@@ -85,43 +83,36 @@ export default function Projects() {
                         <Link
                             href={'https://blog.ive.ink'}
                             target={'_blank'}
-                            className={
-                                'text-xl sm:text-2xl font-medium text-[#007aff]'
-                            }
+                            className={'text-xl sm:text-2xl font-medium link'}
                         >
                             blog.ive.ink
                         </Link>
-                        <div className={'text-gray-500'}>Blog</div>
+                        <div className="description">Blog</div>
                     </div>
                     <div className={'pb-4'}>
                         <Link
                             href={'https://ive.ink'}
                             target={'_blank'}
-                            className={
-                                'text-xl sm:text-2xl font-medium text-[#007aff]'
-                            }
+                            className={'text-xl sm:text-2xl font-medium link'}
                         >
                             ive.ink
                         </Link>
-                        <div className={'text-gray-500'}>Portfolio</div>
+                        <div className="description">Portfolio</div>
                     </div>
                     <div>
-                        <div
-                            className={
-                                'text-xl sm:text-2xl font-medium text-[#007aff] flex'
-                            }
-                        >
+                        <div className={'text-xl sm:text-2xl font-medium flex'}>
                             <Link
                                 href={
                                     'https://github.com/ivanesmantovich/xkbswitch.nvim'
                                 }
                                 target={'_blank'}
+                                className="link"
                             >
                                 xkbswitch.nvim
                             </Link>
                             {getProjectStars(603240504)}
                         </div>
-                        <div className={'text-gray-500'}>
+                        <div className="description">
                             Smart automatic keyboard layout switcher for Neovim
                             in 100 LOC
                         </div>

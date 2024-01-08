@@ -48,10 +48,7 @@ export default function Resume() {
                     </div>
                     <div className={'font-medium'}>2021-2023</div>
                     <div>
-                        <a
-                            className={'text-[#007aff]'}
-                            href={'https://goodt.me/'}
-                        >
+                        <a className="link" href={'https://goodt.me/'}>
                             Goodt
                         </a>
                         , Frontend Developer
@@ -81,11 +78,11 @@ export default function Resume() {
                         href={
                             'https://github.com/ivanesmantovich/xkbswitch.nvim'
                         }
-                        className={'text-[#007aff]'}
+                        className="link"
                     >
                         xkbswitch.nvim
                     </Link>
-                    <div className={'text-gray-500'}>
+                    <div className="description">
                         Smart automatic keyboard layout switcher for Neovim in
                         100 LOC
                     </div>
@@ -112,21 +109,16 @@ export default function Resume() {
                 </div>
 
                 <a
+                    className="flex my-20 w-fit font-semibold text-xl sm:text-2xl text-[#007aff] link"
                     href={'resume.pdf'}
                     target={'_blank'}
                     rel={'noopener noreferrer'}
                     download
                 >
-                    <div
-                        className={
-                            'flex mt-20 mb-20 w-fit font-semibold text-xl sm:text-2xl text-[#007aff]'
-                        }
-                    >
-                        <div className={'pt-0.5'}>
-                            <IoIosDocument />
-                        </div>
-                        <div>PDF</div>
+                    <div className={'pt-1'}>
+                        <IoIosDocument />
                     </div>
+                    <div>PDF</div>
                 </a>
             </div>
         </div>

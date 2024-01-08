@@ -1,9 +1,7 @@
 'use client'
 
 import styles from './Menu.module.css'
-import asterisk from '@/public/asterisk.svg'
 
-import Image from 'next/image'
 import Link from 'next/link'
 
 import { useState } from 'react'
