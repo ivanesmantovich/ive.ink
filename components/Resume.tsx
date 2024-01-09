@@ -108,18 +108,36 @@ export default function Resume() {
                     <div className={'font-medium'}>BA Computer Science</div>
                 </div>
 
-                <a
-                    className="flex my-20 w-fit font-semibold text-xl sm:text-2xl text-[#007aff] link"
-                    href={'resume.pdf'}
-                    target={'_blank'}
-                    rel={'noopener noreferrer'}
-                    download
-                >
-                    <div className={'pt-1'}>
-                        <IoIosDocument />
+                <div className={'flex justify-between items-center my-20'}>
+                    <a
+                        className="flex h-fit font-semibold text-xl sm:text-2xl text-[#007aff] link"
+                        href={'resume.pdf'}
+                        target={'_blank'}
+                        rel={'noopener noreferrer'}
+                        download
+                    >
+                        <div className={'pt-1'}>
+                            <IoIosDocument />
+                        </div>
+                        <div>PDF</div>
+                    </a>
+                    <div
+                        className={'flex flex-col text-lg sm:text-xl items-end'}
+                    >
+                        <a
+                            className={'block link !text-black'}
+                            href="tel:+79204470167"
+                        >
+                            +7 (920) 447-01-67
+                        </a>
+                        <a
+                            className={'block link !text-black w-fit'}
+                            href="mailto:mail@ive.ink"
+                        >
+                            mail@ive.ink
+                        </a>
                     </div>
-                    <div>PDF</div>
-                </a>
+                </div>
             </div>
         </div>
     )
