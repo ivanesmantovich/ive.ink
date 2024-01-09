@@ -61,8 +61,24 @@ export default function Projects() {
                     <Snowdrop visible static />
                 </Link>
 
+                <div className={'pb-8'}>
+                    <div className={'text-xl sm:text-2xl pb-2 text-gray-500'}>
+                        2024
+                    </div>
+                    <div>
+                        <Link
+                            href={'https://blog.ive.ink'}
+                            target={'_blank'}
+                            className={'text-xl sm:text-2xl font-medium link'}
+                        >
+                            blog.ive.ink
+                        </Link>
+                        <div className="description">Blog</div>
+                    </div>
+                </div>
+
                 <div>
-                    <div className={'text-xl sm:text-2xl pb-6 text-gray-500'}>
+                    <div className={'text-xl sm:text-2xl pb-2 text-gray-500'}>
                         2023
                     </div>
                     <div className={'pb-4'}>
@@ -78,16 +94,6 @@ export default function Projects() {
                                 Offline-first PWA Grocery Shopping List{' '}
                             </span>
                         </div>
-                    </div>
-                    <div className={'pb-4'}>
-                        <Link
-                            href={'https://blog.ive.ink'}
-                            target={'_blank'}
-                            className={'text-xl sm:text-2xl font-medium link'}
-                        >
-                            blog.ive.ink
-                        </Link>
-                        <div className="description">Blog</div>
                     </div>
                     <div className={'pb-4'}>
                         <Link

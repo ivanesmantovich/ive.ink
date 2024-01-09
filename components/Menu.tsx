@@ -93,7 +93,7 @@ export default function Menu() {
                 </a>
 
                 <a
-                    href="mailto:ivanesmantovich@gmail.com"
+                    href="mailto:mail@ive.ink"
                     className="py-7 pl-14 flex flex-row cursor-pointer"
                     onMouseOver={emailEnter}
                     onMouseOut={handleMouseout}
