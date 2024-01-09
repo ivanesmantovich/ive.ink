@@ -61,7 +61,7 @@ export default function Resume() {
                         </li>
                         <li>
                             Developed reusable components that became a part of
-                            the Ul library
+                            the UI library
                         </li>
                         <li>
                             Wrote utility scripts ot improve the API Developer
