@@ -111,7 +111,7 @@ export default function Resume() {
                 <div className={'flex justify-between items-center my-20'}>
                     <a
                         className="flex h-fit font-semibold text-xl sm:text-2xl text-[#007aff] link"
-                        href={'resume.pdf'}
+                        href={'/resume.pdf'}
                         target={'_blank'}
                         rel={'noopener noreferrer'}
                         download
