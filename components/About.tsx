@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Snowdrop from './Snowdrop'
 
 export default function About() {
-    function linkProjects() {
+    function Projects() {
         return (
             <Link href={'/projects'} className="link">
                 make
@@ -13,10 +13,21 @@ export default function About() {
         )
     }
 
-    function linkBlog() {
+    function Blog() {
         return (
             <Link href={'/blog'} className="link">
                 write
+            </Link>
+        )
+    }
+
+    function Location() {
+        return (
+            <Link
+                href={'https://maps.app.goo.gl/FwKbSSGDmtk26SQB8'}
+                className={'link'}
+            >
+                Voronezh, Russia
             </Link>
         )
     }
@@ -34,19 +45,19 @@ export default function About() {
                     <div className={'pb-8'}>
                         <div className={'pb-1'}>My name is Ivan.</div>
                         <div>
-                            I am a web developer currently living in Voronezh,
-                            Russia.
+                            I am a Frontend Developer currently living in{' '}
+                            <Location />.
                         </div>
                     </div>
 
                     <div className={'pb-8'}>
                         <div className={'pb-1'}>
-                            I {linkProjects()} long-lasting, easy-to-use,
-                            aesthetic software.
+                            I <Projects /> long-lasting, easy-to-use, aesthetic
+                            software.
                         </div>
                         <div>
-                            I {linkBlog()} about UX, design, web performance,
-                            tools for developers and some other stuff.
+                            I <Blog /> about UX, design, web performance, tools
+                            for developers and some other stuff.
                         </div>
                     </div>
 
