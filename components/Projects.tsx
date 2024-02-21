@@ -55,73 +55,71 @@ export default function Projects() {
     return (
         <div className="flex grow justify-center">
             <div
-                className={`flex flex-col h-full w-5/6 sm:w-4/6 ${styles.fadeIn}`}
+                className={`flex flex-col h-full w-5/6 sm:w-2/5 slide-enter-content`}
             >
                 <Link className="w-fit pt-10 sm:pt-28 pb-20" href="/menu">
                     <Snowdrop visible static />
                 </Link>
 
-                <div className={'pb-8'}>
-                    <div className={'text-xl sm:text-2xl pb-2 text-gray-500'}>
-                        2024
-                    </div>
-                    <div>
-                        <Link
-                            href={'https://blog.ive.ink'}
-                            target={'_blank'}
-                            className={'text-xl sm:text-2xl font-medium link'}
-                        >
-                            blog.ive.ink
-                        </Link>
-                        <div className="description">Blog</div>
+                <div className={'text-xl sm:text-2xl pb-2 text-gray-500'}>
+                    2024
+                </div>
+
+                <div className='pb-8'>
+                    <Link
+                        href={'https://blog.ive.ink'}
+                        target={'_blank'}
+                        className={'text-xl sm:text-2xl font-medium link'}
+                    >
+                        blog.ive.ink
+                    </Link>
+                    <div className="description">Blog</div>
+                </div>
+
+                <div className={'text-xl sm:text-2xl pb-2 text-gray-500'}>
+                    2023
+                </div>
+
+                <div className='pb-4'>
+                    <Link
+                        href={'https://ichi.ive.ink'}
+                        target={'_blank'}
+                        className={'text-xl sm:text-2xl font-medium link'}
+                    >
+                        Ichi
+                    </Link>
+                    <div className="description">
+                        Offline-first PWA Grocery Shopping List
                     </div>
                 </div>
 
-                <div>
-                    <div className={'text-xl sm:text-2xl pb-2 text-gray-500'}>
-                        2023
-                    </div>
-                    <div className={'pb-4'}>
+                <div className='pb-4'>
+                    <Link
+                        href={'https://ive.ink'}
+                        target={'_blank'}
+                        className={'text-xl sm:text-2xl font-medium link'}
+                    >
+                        ive.ink
+                    </Link>
+                    <div className="description">Portfolio</div>
+                </div>
+
+                <div className='pb-4'>
+                    <div className={'text-xl sm:text-2xl font-medium flex'}>
                         <Link
-                            href={'https://ichi.ive.ink'}
+                            href={
+                                'https://github.com/ivanesmantovich/xkbswitch.nvim'
+                            }
                             target={'_blank'}
-                            className={'text-xl sm:text-2xl font-medium link'}
+                            className="link"
                         >
-                            Ichi
+                            xkbswitch.nvim
                         </Link>
-                        <div className="description">
-                            <span>
-                                Offline-first PWA Grocery Shopping List{' '}
-                            </span>
-                        </div>
+                        {getProjectStars(603240504)}
                     </div>
-                    <div className={'pb-4'}>
-                        <Link
-                            href={'https://ive.ink'}
-                            target={'_blank'}
-                            className={'text-xl sm:text-2xl font-medium link'}
-                        >
-                            ive.ink
-                        </Link>
-                        <div className="description">Portfolio</div>
-                    </div>
-                    <div>
-                        <div className={'text-xl sm:text-2xl font-medium flex'}>
-                            <Link
-                                href={
-                                    'https://github.com/ivanesmantovich/xkbswitch.nvim'
-                                }
-                                target={'_blank'}
-                                className="link"
-                            >
-                                xkbswitch.nvim
-                            </Link>
-                            {getProjectStars(603240504)}
-                        </div>
-                        <div className="description">
-                            Smart automatic keyboard layout switcher for Neovim
-                            in 100 LOC
-                        </div>
+                    <div className="description">
+                        Smart automatic keyboard layout switcher for Neovim
+                        in 100 LOC
                     </div>
                 </div>
             </div>

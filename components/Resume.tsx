@@ -9,7 +9,7 @@ export default function Resume() {
     return (
         <div className="flex grow justify-center">
             <div
-                className={`flex flex-col h-full w-5/6 sm:w-4/6 ${styles.fadeIn}`}
+                className={`flex flex-col h-full w-5/6 sm:w-4/6 slide-enter-content`}
             >
                 <Link className="w-fit pt-10 sm:pt-28 pb-20" href="/menu">
                     <Snowdrop visible static />

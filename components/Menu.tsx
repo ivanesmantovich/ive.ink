@@ -39,7 +39,7 @@ export default function Menu() {
     return (
         <div className="flex grow items-center justify-center">
             <div
-                className={`flex flex-col text-2xl sm:text-4xl ${styles.fadeIn}`}
+                className={`flex flex-col text-2xl sm:text-4xl slide-enter-content`}
             >
                 <Link
                     href="/about"
