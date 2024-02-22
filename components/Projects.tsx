@@ -65,7 +65,7 @@ export default function Projects() {
                     2024
                 </div>
 
-                <div className='pb-8'>
+                <div className="pb-8">
                     <Link
                         href={'https://blog.ive.ink'}
                         target={'_blank'}
@@ -80,7 +80,7 @@ export default function Projects() {
                     2023
                 </div>
 
-                <div className='pb-4'>
+                <div className="pb-4">
                     <Link
                         href={'https://ichi.ive.ink'}
                         target={'_blank'}
@@ -93,7 +93,7 @@ export default function Projects() {
                     </div>
                 </div>
 
-                <div className='pb-4'>
+                <div className="pb-4">
                     <Link
                         href={'https://ive.ink'}
                         target={'_blank'}
@@ -104,7 +104,7 @@ export default function Projects() {
                     <div className="description">Portfolio</div>
                 </div>
 
-                <div className='pb-4'>
+                <div className="pb-4">
                     <div className={'text-xl sm:text-2xl font-medium flex'}>
                         <Link
                             href={
@@ -118,8 +118,8 @@ export default function Projects() {
                         {getProjectStars(603240504)}
                     </div>
                     <div className="description">
-                        Smart automatic keyboard layout switcher for Neovim
-                        in 100 LOC
+                        Smart automatic keyboard layout switcher for Neovim in
+                        100 LOC
                     </div>
                 </div>
             </div>
